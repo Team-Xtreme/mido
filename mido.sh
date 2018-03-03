@@ -1,10 +1,13 @@
 echo "Cloning Device Tree"
+rm -rf device/xiaomi/mido
 git clone https://github.com/Team-Xtreme/mido.git -b oreo device/xiaomi/mido
 
 echo "Cloning Kernel Tree"
+rm -rf kernel/xiaomi/msm8953
 git clone https://github.com/Adesh15/android_kernel_xiaomi_msm8953.git -b oreo kernel/xiaomi/msm8953
 
 echo "Cloning Vendor Tree"
+rm -rf vendor/xiaomi
 git clone https://github.com/Adesh15/proprietary_vendor_xiaomi.git -b lineage-15.1 vendor/xiaomi
 
 echo "I don't want this old hals"
